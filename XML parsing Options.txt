@@ -1,0 +1,51 @@
+XML Parsing Options
+XML Parsing Options
+
+Android supports a fairly standard implementation of the Java DOM and SAX APIs. 
+If you have existing experience with these, or if you have code that already leverages them, feel free to use them.
+
+ 
+
+Android also bakes in the XmlPullParser from thexmlpull.org site. 
+Like SAX, the XmlPullParser is an event-driven interface, compared to the DOM that builds up a complete data structure and hands you that result. 
+Unlike SAX, which relies on a listener and callback methods, the XmlPullParser has you pull events off a queue, 
+ignoring those you do not need and dispatching the rest as you see fit to the rest of your code.
+
+ 
+
+The primary reason the XmlPullParser was put into Android was for XML-encoded resources. 
+While you write plain-text XML during development, what is packaged in your APK file is a so-called “binary XML” format, 
+where angle brackets and quotation marks and such are replaced by bitfields. This helps compression a bit, 
+but mostly this conversion is done to speed up parsing. 
+Android’s XML resource parser can parse this “binary XML” approximately ten times faster than it can parse the equivalent plain-text XML. 
+Hence, anything you put in an XML resource (res/ xml/) will be parsed similarly quickly.
+
+ 
+
+For plain-text XML content, the XmlPullParser is roughly equivalent, speed-wise, to SAX. 
+All else being equal, lean towards SAX, simply because more developers will be familiar with it from classic Java development. 
+However, if you really like the XmlPullParser interface, feel free to use it.
+
+You are welcome to try a third-party XML parser JAR, but bear in mind that there may be issues when trying to get it working in Android.
+
+ 
+
+Why and when to use SAX(Simple API for XML) over DOM (Document Object Model)?
+
+ 
+
+ 
+
+1). The quantity of memory that a SAX parser must use in order to function is typically much smaller than that of a DOM parser. 
+DOM parsers must have the entire Object tree in memory before any processing can begin, so the amount of memory used by a DOM parser depends entirely on the size of the input data.
+
+ 
+
+2). Because of the event-driven nature of SAX, processing documents can often be faster than DOM-style parsers. 
+Memory allocation takes time, so the larger memory footprint of the DOM is also a performance issue.
+
+ 
+
+3). Due to the nature of DOM, streamed reading from disk is impossible. 
+Processing XML documents larger than main memory is also impossible with DOM parsers but can be done with SAX parsers. 
+However, DOM parsers may make use of disk space as memory to side step this limitation.

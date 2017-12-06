@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <course  phone="(440)942-2500" length="6173" >Manakiki Golf Course</course>
+    <Placemark>
+      <name>Tee Box - Hole 1</name>
+      <Point>
+        <coordinates>-81.4324182271957,41.5984273639879,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Front of Green - Hole 1</name>
+      <Point>
+        <coordinates>-81.433182656765,41.5955730479591,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Middle of Green - Hole 1</name>
+      <Point>
+        <coordinates>-81.4331665635109,41.5954647298964,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Back of Green - Hole 1</name>
+      <Point>
+        <coordinates>-81.4331531524658,41.5953664411267,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bunker1 - FWL - Hole 1</name>
+      <Point>
+        <coordinates>-81.4327722787857,41.5969992188305,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bunker2 - GR - Hole 1</name>
+      <Point>
+        <coordinates>-81.4334589242935,41.595559006739,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bunker3 - GL - Hole 1</name>
+      <Point>
+        <coordinates>-81.4329439401627,41.5956954070334,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tee Box - Hole 2</name>
+      <Point>
+        <coordinates>-81.4325255155563,41.5953503939664,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Front of Green - Hole 2</name>
+      <Point>
+        <coordinates>-81.4339175820351,41.5930616268666,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Middle of Green - Hole 2</name>
+      <Point>
+        <coordinates>-81.4340248703957,41.5929753702532,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Back of Green - Hole 2</name>
+      <Point>
+        <coordinates>-81.4341133832932,41.5928951314396,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bunker1 - FWR - Hole 2</name>
+      <Point>
+        <coordinates>-81.4332389831543,41.5939763410702,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bunker2 - GL - Hole 2</name>
+      <Point>
+        <coordinates>-81.4335662126541,41.593145877401,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bunker3 - GR - Hole 2</name>
+      <Point>
+        <coordinates>-81.4340490102768,41.5931960264765,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
